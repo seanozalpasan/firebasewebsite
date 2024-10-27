@@ -125,7 +125,7 @@ body {
 .photo-carousel img {
     height: 100%;
     position: absolute;
-    border-radius: 15px;
+    border-radius: 20px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     left: 50%;      /* Added to center horizontally */
@@ -192,6 +192,9 @@ body {
     z-index: 2001;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
 
 /* Sailing Page Styles */
 .sailing-carousel {
@@ -317,4 +320,8 @@ body {
 .entering-down {
     transform: translateY(-100%) scale(0.8);
     opacity: 0;
+}
+
+#age {
+    font-size: 1em;
 }
