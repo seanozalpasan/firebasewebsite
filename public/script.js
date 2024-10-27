@@ -154,6 +154,64 @@ document.addEventListener('DOMContentLoaded', () => {
             carousel.appendChild(img);
         });
 
+
+        const projectModal = document.querySelector('.project-modal');
+        const projectModalContent = document.querySelector('.project-modal-content');
+        const closeProjectModal = document.querySelector('.close-project-modal');
+
+        // Project data - you can modify this with your actual project information
+        const projectData = {
+            1: {
+                title: "Project Title 1",
+                description: "Detailed description of project 1. You can include multiple paragraphs, technical details, and achievements here. The text will appear on the left side of the modal.",
+                image: "project1.jpg"
+            },
+            2: {
+                title: "Project Title 2",
+                description: "Detailed description of project 2. Explain the technology stack, your role, and the impact of the project.",
+                image: "project2.jpg"
+            },
+            3: {
+                title: "Project Title 3",
+                description: "Detailed description of project 3. Include relevant links, technologies used, and key features implemented.",
+                image: "project3.jpg"
+            }
+        };
+
+        // Add click event listeners to projects
+        document.querySelectorAll('.project').forEach(project => {
+            project.addEventListener('click', () => {
+                const projectId = project.dataset.project;
+                const projectInfo = projectData[projectId];
+
+                // Update modal content
+                projectModalContent.querySelector('h3').textContent = projectInfo.title;
+                projectModalContent.querySelector('.project-description').textContent = projectInfo.description;
+                projectModalContent.querySelector('.project-image').src = projectInfo.image;
+
+                // Show modal
+                projectModal.style.display = 'block';
+            });
+        });
+
+        // Close modal functionality
+        closeProjectModal.addEventListener('click', () => {
+            projectModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside
+        projectModal.addEventListener('click', (e) => {
+            if (e.target === projectModal) {
+                projectModal.style.display = 'none';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && projectModal.style.display === 'block') {
+                projectModal.style.display = 'none';
+            }
+        });
         // Modal controls
         document.querySelector('.close').addEventListener('click', () => {
             modal.style.display = 'none';
