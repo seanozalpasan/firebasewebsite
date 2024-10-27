@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    overflow: hidden;
+    perspective: 1000px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: none;
+    background-color: #2a2a2a;
+}
+
+.page.active {
+    transform: translateX(0) scale(1);
+    display: block;
+    opacity: 1;
+}
+
+/* Landing Page Styles */
+.nav-links {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 2.5rem;
+    color: #ff9955;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fallIn 1.25s ease-out forwards;
+}
+
+.nav-link:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.nav-link:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.nav-link:hover {
+    color: #ffbb88;
+}
+
+@keyframes fallIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-image {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.profile-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 153, 85, 0.3);
+}
+
+/* Home Icon */
+.home-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #ff9955;
+    font-size: 1.5rem;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.home-icon:hover {
+    color: #ffbb88;
+}
+
+/* About Page Styles */
+.about-content {
+    padding: 100px 20%;
+    text-align: center;
+}
+
+.bio {
+    margin-bottom: 3rem;
+}
+
+.bio h2 {
+    color: #ff9955;
+    margin-bottom: 1rem;
+}
+
+.photo-carousel {
+    margin: 2rem auto;  /* Changed from '2rem 0' to center horizontally */
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    width: 500px;    /* Added explicit width */
+}
+
+.photo-carousel img {
+    height: 100%;
+    position: absolute;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    left: 50%;      /* Added to center horizontally */
+    transform: translateX(-50%);  /* Added to center horizontally */
+}
+
+.photo-carousel img.active {
+    opacity: 1;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-links a {
+    color: #ff9955;
+    font-size: 2rem;
+}
+
+.social-links a:hover {
+    color: #ffbb88;
+}
+
+/* Add these new styles to your existing CSS */
+.resume-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.resume-btn::before {
+    content: "📄";
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+}
+
+#resume-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-resume {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #ff9955;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+
+/* Sailing Page Styles */
+.sailing-carousel {
+    padding: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sailing-carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sailing-carousel img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1001;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* Projects Page Styles */
+.projects-content {
+    padding: 100px 20%;
+    display: grid;
+    gap: 2rem;
+}
+
+.project {
+    background-color: #333333;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #ff9955;
+}
+
+.project h3 {
+    color: #ff9955;
+    margin-bottom: 1rem;
+}
+
+/* Enhanced Page Transitions */
+.slide-left {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0;
+}
+
+.slide-right {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0;
+}
+
+.slide-up {
+    transform: translateY(-100%) scale(0.8);
+    opacity: 0;
+}
+
+.slide-down {
+    transform: translateY(100%) scale(0.8);
+    opacity: 0;
+}
+
+.entering-left {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0;
+}
+
+.entering-right {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0;
+}
+
+.entering-up {
+    transform: translateY(100%) scale(0.8);
+    opacity: 0;
+}
+
+.entering-down {
+    transform: translateY(-100%) scale(0.8);
+    opacity: 0;
+}

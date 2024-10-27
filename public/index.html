@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi :D</title>
+    <link rel="shortcut icon" href="seanfavicon.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="landing-page" class="page active">
+        <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#sailing" class="nav-link">Sailing</a>
+            <a href="#projects" class="nav-link">Projects</a>
+        </div>
+        <div class="profile-image">
+            <img src="seanpfp.jpg" alt="Profile Picture">
+        </div>
+    </div>
+
+    <div id="about-page" class="page">
+        <a href="#" class="home-icon"><i class="fas fa-home"></i></a>
+        <div class="about-content">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>Your biography text goes here...</p>
+            </div>
+            <div class="photo-carousel">
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/seanozalpasan" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/sozlpsn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="resume-btn"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sailing-page" class="page">
+        <a href="#" class="home-icon"><i class="fas fa-home"></i></a>
+        <div class="sailing-carousel">
+        </div>
+        <div class="modal">
+            <span class="close">&times;</span>
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+            <img class="modal-content" id="modal-img">
+        </div>
+    </div>
+
+    <div id="projects-page" class="page">
+        <a href="#" class="home-icon"><i class="fas fa-home"></i></a>
+        <div class="projects-content">
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Project description goes here...</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Project description goes here...</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 3</h3>
+                <p>Project description goes here...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="resume-overlay" class="overlay">
+        <span class="close-resume">×</span>
+        <iframe id="resume-frame"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
