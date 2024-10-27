@@ -303,13 +303,26 @@ body {
 
 .project-thumbnail {
     width: 100%;
-    height: 125px;  /* Adjust height as needed */
-    object-fit: cover;
+    height: 150px;  /* Adjust this value to your preferred height */
+    object-fit: contain;  /* Changed from 'cover' to 'contain' */
     border-radius: 5px;
+    padding: 10px;  /* Add some padding around the image */
 }
 
 .project:hover {
     animation: shake 0.5s ease-in-out;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.02);  /* Slightly enlarge on hover */
 }
 
 .project h3 {

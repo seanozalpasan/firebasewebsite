@@ -160,11 +160,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const closeProjectModal = document.querySelector('.close-project-modal');
 
         // Project data - you can modify this with your actual project information
+        const proj1Desc = `
+        During my time at USC SHINE, I had the honor of working with Kaixin Yang, 
+        a Ph.D student under Prof. Nuzzo. Together with Kaixin, we created around 17 digital circuits using Verilog. 
+        Then, with differing key lengths, we turned the original 17 circuits into 124 locked circuits, 
+        using Random Logic Locking. We then collected data on these 124 circuits. 
+        The end goal of these circuits was to mirror a Graph, where the logic gates were the nodes, 
+        and their inputs and outputs were edges. We created scripts to come up with information about 
+        their fan-in and fan-out cones, node features, and edge features in order to prepare the dataset.
+         With the creation of this dataset, I created a Graph Neural Network that would predict the 
+         attack runtime of any given locked circuit.
+        `;
+
         const projectData = {
             1: {
-                title: "Project Title 1",
-                description: "Detailed description of project 1. You can include multiple paragraphs, technical details, and achievements here. The text will appear on the left side of the modal.",
-                image: "project1.jpg"
+                title: "USC Summer High School Intensive in Next-Generation Engineering (SHINE)",
+                description: proj1Desc,
+                image: "7SHINE23-OZALPASAN-S-PosterFINAL - Sean Ozalpasan.jpg",
+                pdf: "7SHINE23-OZALPASAN-S-PosterFINAL - Sean Ozalpasan.pdf"
             },
             2: {
                 title: "Project Title 2",
@@ -178,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // Add click event listeners to projects
+        // Update the modal image to be clickable
         document.querySelectorAll('.project').forEach(project => {
             project.addEventListener('click', () => {
                 const projectId = project.dataset.project;
@@ -187,7 +200,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Update modal content
                 projectModalContent.querySelector('h3').textContent = projectInfo.title;
                 projectModalContent.querySelector('.project-description').textContent = projectInfo.description;
-                projectModalContent.querySelector('.project-image').src = projectInfo.image;
+
+                // Create and update image with click handler
+                const modalImage = projectModalContent.querySelector('.project-image');
+                modalImage.src = projectInfo.image;
+                modalImage.style.cursor = 'pointer';  // Make it look clickable
+
+                // Add click event to open PDF
+                modalImage.onclick = () => {
+                    window.open(projectInfo.pdf, '_blank');
+                };
 
                 // Show modal
                 projectModal.style.display = 'block';
@@ -225,6 +247,22 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.next').addEventListener('click', () => {
             currentImageIndex = (currentImageIndex + 1) % sailingPhotos.length;
             modalImg.src = sailingPhotos[currentImageIndex];
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            // Only handle arrow keys if modal is visible
+            if (modal.style.display === 'block') {
+                if (e.key === 'ArrowLeft') {
+                    // Left arrow - previous image
+                    currentImageIndex = (currentImageIndex - 1 + sailingPhotos.length) % sailingPhotos.length;
+                    modalImg.src = sailingPhotos[currentImageIndex];
+                } else if (e.key === 'ArrowRight') {
+                    // Right arrow - next image
+                    currentImageIndex = (currentImageIndex + 1) % sailingPhotos.length;
+                    modalImg.src = sailingPhotos[currentImageIndex];
+                }
+            }
         });
 
         modal.addEventListener('click', (e) => {
