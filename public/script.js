@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
         During my time at USC SHINE, I had the honor of working with Kaixin Yang, 
         a Ph.D student under Prof. Nuzzo. Together with Kaixin, we created around 17 digital circuits using Verilog. 
         Then, with differing key lengths, we turned the original 17 circuits into 124 locked circuits, 
-        using Random Logic Locking. We then collected data on these 124 circuits. 
+        using Random Logic Locking. We then collected data on these 124 circuits. 💻
         The end goal of these circuits was to mirror a Graph, where the logic gates were the nodes, 
         and their inputs and outputs were edges. We created scripts to come up with information about 
         their fan-in and fan-out cones, node features, and edge features in order to prepare the dataset.
@@ -188,12 +188,20 @@ document.addEventListener('DOMContentLoaded', () => {
         After leading the Turkish War of Independence, Atatürk established a democratic, 
         secular state guided by his philosophy of Kemalism. He pursued complete national independence, 
         modernization through education, and gender equality. 
-        In foreign relations, he followed the principle "Peace at home, Peace in the world," 
+        In foreign relations, he followed the principle "Peace at home 🏡, Peace in the world 🌍," 
         securing Turkey's sovereignty through diplomatic achievements 
         like the Montreux Convention while maintaining independence from foreign powers.
         My presentation won ATAA's Youth Science for Peace Day competition, and I was
         invited to Washington D.C. to attend the ATAA annual conference. Click on the image to open the presentation | 
         Copy the link to watch my segment: https://youtu.be/kNDXeqv6-fM?t=440
+        `;
+
+        const proj3Desc = `
+        Over the summer I took a deep dive into Cyber Security. I did a 3 week 21 hr/wk program where
+        I learned a lot of the important topics in CyberSec, and completed mini-projects with a group.
+        After the program concluded, the interest stuck, and I asked one of the boot camp mentors to shadow me as I made this 
+        mock-Keylogger. They appreciated my work ethic and passion so much, that they offered me a job if I might need one in college 🙏 
+        | Click on the image to get to the project GitHub link
         `;
 
         const proj4Desc = `
@@ -204,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
         proposing solutions through community events, cultural clubs, and education. 
         The presentation also touches on the importance of staying informed about 
         Turkish current events, foreign policy, and international relations, 
-        highlighting the role of young Turkish people in shaping their community's future. Click on the image to open the presentation | Copy this link to watch my segment!
+        highlighting the role of young Turkish people in shaping their community's future 🇹🇷 Click on the image to open the presentation | Copy this link to watch my segment!
          https://youtu.be/YpAaGGvcPBg?t=371
         `;
 
@@ -228,9 +236,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 pdf: "Yurtta sulh Cihanda sulh.pdf"
             },
             3: {
-                title: "Project Title 3 Coming Soon",
-                description: "Coming Soon",
-                image: "project3.jpg"
+                title: "Making a Keylogger malware to understand how evil Cybercriminals are",
+                description: proj3Desc,
+                image: "keylogbiggerimage.png",
+                pdf: "https://github.com/seanozalpasan/KeyLogProj"
             },
             4: {
                 title: "“Prosperous Future for All Through Multilateral Dialogue” in support of (April 24) International Day of Multilateralism and Diplomacy for Peace (A/RES/73/127)",
