@@ -210,6 +210,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: "Project Title 3",
                 description: "Detailed description of project 3. Include relevant links, technologies used, and key features implemented.",
                 image: "project3.jpg"
+            },
+            4: {
+                title: "Project Title 4",
+                description: "Detailed description of project 3. Include relevant links, technologies used, and key features implemented.",
+                image: "project4.jpg"
             }
         };
 
