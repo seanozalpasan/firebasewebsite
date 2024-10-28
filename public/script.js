@@ -82,10 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // About page photo carousel
     let currentPhotoIndex = 0;
     const photos = [
-        'hellyhansen.jpg',
         'goated.jpg',
         'friends.jpg',
-        'egg.jpg',
         'wmom.JPG',
         'eatingfood.JPEG',
         'inthecar.JPG',
@@ -107,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             images[currentPhotoIndex].classList.remove('active');
             currentPhotoIndex = (currentPhotoIndex + 1) % images.length;
             images[currentPhotoIndex].classList.add('active');
-        }, 3000);
+        }, 1600);
     }
 
     const resumeBtn = document.querySelector('.resume-btn');
@@ -193,6 +191,18 @@ document.addEventListener('DOMContentLoaded', () => {
         invited to Washington D.C. to attend the ATAA annual conference. CLICK ON THE IMAGE TO VIEW THE PRESI
         `;
 
+        const proj4Desc = `
+        The presentation "What Turkish Youth Want For Our Future" 
+        addresses the aspirations and challenges facing Turkish youth today. 
+        It emphasizes key values such as multilateralism, inclusion, solidarity, peace, and resilience. 
+        The talk discusses issues around foreign policy representation and cultural identity, 
+        proposing solutions through community events, cultural clubs, and education. 
+        The presentation also touches on the importance of staying informed about 
+        Turkish current events, foreign policy, and international relations, 
+        highlighting the role of young Turkish people in shaping their community's future. Copy this link to watch my segment!
+         https://youtu.be/YpAaGGvcPBg?t=371
+        `;
+
         const projectData = {
             1: {
                 title: "USC Summer High School Intensive in Next-Generation Engineering (SHINE)",
@@ -212,9 +222,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 image: "project3.jpg"
             },
             4: {
-                title: "Project Title 4",
-                description: "Detailed description of project 3. Include relevant links, technologies used, and key features implemented.",
-                image: "project4.jpg"
+                title: "“Prosperous Future for All Through Multilateral Dialogue” in support of (April 24) International Day of Multilateralism and Diplomacy for Peace (A/RES/73/127)",
+                description: proj4Desc,
+                image: "24aprilpres.png",
+                pdf: "SeanOzalpasanATAANisan24Pres.pdf"
             }
         };
 
