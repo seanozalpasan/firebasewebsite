@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
         proposing solutions through community events, cultural clubs, and education. 
         The presentation also touches on the importance of staying informed about 
         Turkish current events, foreign policy, and international relations, 
-        highlighting the role of young Turkish people in shaping their community's future. Copy this link to watch my segment!
+        highlighting the role of young Turkish people in shaping their community's future. CLICK ON THE IMAGE TO VIEW THE PRESI | Copy this link to watch my segment!
          https://youtu.be/YpAaGGvcPBg?t=371
         `;
 
