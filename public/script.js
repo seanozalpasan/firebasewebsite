@@ -188,7 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
         securing Turkey's sovereignty through diplomatic achievements 
         like the Montreux Convention while maintaining independence from foreign powers.
         My presentation won ATAA's Youth Science for Peace Day competition, and I was
-        invited to Washington D.C. to attend the ATAA annual conference. CLICK ON THE IMAGE TO VIEW THE PRESI
+        invited to Washington D.C. to attend the ATAA annual conference. CLICK ON THE IMAGE TO VIEW THE PRESI | 
+        Copy the link to watch my segment: https://youtu.be/kNDXeqv6-fM?t=440
         `;
 
         const proj4Desc = `
