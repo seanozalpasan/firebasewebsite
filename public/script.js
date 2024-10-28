@@ -172,6 +172,19 @@ document.addEventListener('DOMContentLoaded', () => {
          attack runtime of any given locked circuit.
         `;
 
+        const proj2Desc = `
+        The presentation covers Atatürk's transformation of Turkey 
+        from the ruins of the Ottoman Empire into a modern republic. 
+        After leading the Turkish War of Independence, Atatürk established a democratic, 
+        secular state guided by his philosophy of Kemalism. He pursued complete national independence, 
+        modernization through education, and gender equality. 
+        In foreign relations, he followed the principle "Peace at home, Peace in the world," 
+        securing Turkey's sovereignty through diplomatic achievements 
+        like the Montreux Convention while maintaining independence from foreign powers.
+        My presentation won ATAA's Youth Science for Peace Day competition, and I was
+        invited to Washington D.C. to attend the ATAA annual conference. CLICK ON THE IMAGE TO VIEW THE PRESI
+        `;
+
         const projectData = {
             1: {
                 title: "USC Summer High School Intensive in Next-Generation Engineering (SHINE)",
@@ -180,9 +193,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 pdf: "7SHINE23-OZALPASAN-S-PosterFINAL - Sean Ozalpasan.pdf"
             },
             2: {
-                title: "Project Title 2",
-                description: "Detailed description of project 2. Explain the technology stack, your role, and the impact of the project.",
-                image: "project2.jpg"
+                title: "Assembly of Turkish American Association's (ATAA) Yurtta Sulh Cihanda Sulh Presentation",
+                description: proj2Desc,
+                image: "yurttasulh.png",
+                pdf: "Yurtta sulh Cihanda sulh.pdf"
             },
             3: {
                 title: "Project Title 3",
