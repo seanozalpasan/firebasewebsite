@@ -85,9 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'goated.jpg',
         'friends.jpg',
         'wmom.JPG',
+        'scenic.jpg',
         'eatingfood.JPEG',
         'inthecar.JPG',
-        'porkbellyyum.jpg'
+        'porkbellyyum.jpg',
+        'academicex.jpg',
+        'suited.jpg'
     ];
 
     function setupPhotoCarousel() {
@@ -142,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'sf2.jpg',
             'sf3.jpg',
             'mont1.jpg',
+            'hiking.jpg',
             'iluvsailing.jpg',
             'boat.JPG',
             'newport.JPG',
@@ -188,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
         securing Turkey's sovereignty through diplomatic achievements 
         like the Montreux Convention while maintaining independence from foreign powers.
         My presentation won ATAA's Youth Science for Peace Day competition, and I was
-        invited to Washington D.C. to attend the ATAA annual conference. CLICK ON THE IMAGE TO VIEW THE PRESI | 
+        invited to Washington D.C. to attend the ATAA annual conference. Click on the image to open the presentation | 
         Copy the link to watch my segment: https://youtu.be/kNDXeqv6-fM?t=440
         `;
 
@@ -200,8 +204,14 @@ document.addEventListener('DOMContentLoaded', () => {
         proposing solutions through community events, cultural clubs, and education. 
         The presentation also touches on the importance of staying informed about 
         Turkish current events, foreign policy, and international relations, 
-        highlighting the role of young Turkish people in shaping their community's future. CLICK ON THE IMAGE TO VIEW THE PRESI | Copy this link to watch my segment!
+        highlighting the role of young Turkish people in shaping their community's future. Click on the image to open the presentation | Copy this link to watch my segment!
          https://youtu.be/YpAaGGvcPBg?t=371
+        `;
+
+        const proj5Desc = `
+        As a part of one my physics labs, I leveraged AI to create
+        3D & 2D visualizations of the lab data. The data was collected by me and my lab partner, all 513 data points
+        were collected manually 😮‍💨 | Click on the image to get to the project GitHub link
         `;
 
         const projectData = {
@@ -227,6 +237,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 description: proj4Desc,
                 image: "24aprilpres.png",
                 pdf: "SeanOzalpasanATAANisan24Pres.pdf"
+            },
+            5: {
+                title: "3D & 2D Electric Potential Visualization",
+                description: proj5Desc,
+                image: "3dvis.png",
+                pdf: "https://github.com/seanozalpasan/PhysicsPotentialLab"
             }
         };
 

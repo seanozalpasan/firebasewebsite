@@ -349,17 +349,18 @@ body {
     75% { transform: translateX(5px); }
 }
 
+/* Projects Page Styles */
 .projects-content {
-    padding: 100px 20%;
+    padding: 80px 20% 20px 20%; /* Reduced top padding, added bottom padding */
     display: grid;
     gap: 2rem;
-
-    max-height: calc(100vh - 120px); /* Leave some space for padding */
+    max-height: 100vh; /* Use full viewport height */
     overflow-y: auto;
     position: relative;
-    margin-top: 20px;
+    box-sizing: border-box; /* Ensure padding is included in height calc */
 }
 
+/* Ensure the scrollbar styles remain clean */
 .projects-content::-webkit-scrollbar {
     width: 10px;
 }
@@ -378,19 +379,19 @@ body {
     background: #ffbb88;
 }
 
+/* Adjust project cards to ensure proper spacing */
 .project {
+    margin-bottom: 1rem; /* Add space between projects */
     background-color: #333333;
     padding: 2rem;
     border-radius: 10px;
     border-left: 4px solid #ff9955;
     cursor: pointer;
     transition: all 0.3s ease;
-
     display: grid;
-    grid-template-columns: 1fr 200px;  /* Adjust 200px to your preferred image width */
+    grid-template-columns: 1fr 200px;
     gap: 2rem;
     align-items: center;
-
     background: linear-gradient(
         145deg,
         rgba(51, 51, 51, 0.95),
