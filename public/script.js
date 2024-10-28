@@ -85,7 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'hellyhansen.jpg',
         'goated.jpg',
         'friends.jpg',
-        'egg.jpg'
+        'egg.jpg',
+        'wmom.JPG',
+        'eatingfood.JPEG',
+        'inthecar.JPG',
+        'porkbellyyum.jpg'
     ];
 
     function setupPhotoCarousel() {
@@ -140,7 +144,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'sf2.jpg',
             'sf3.jpg',
             'mont1.jpg',
-            'iluvsailing.jpg'
+            'iluvsailing.jpg',
+            'boat.JPG',
+            'newport.JPG',
+            'ogsailing.JPG',
+            'sandiegoboat.jpg'
         ];
 
         sailingPhotos.forEach((photo, index) => {
