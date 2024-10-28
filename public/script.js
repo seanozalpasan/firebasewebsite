@@ -114,19 +114,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeResume = document.querySelector('.close-resume');
 
     resumeBtn.addEventListener('click', () => {
-        resumeFrame.src = 'SeanOzalpasanResume.pdf'
+        resumeFrame.src = 'UPDATEDSeanOzalpasanResume.pdf'
         resumeOverlay.style.display = 'block';
     });
 
     closeResume.addEventListener('click', () => {
         resumeOverlay.style.display = 'none';
-        resumeFrame.src = 'SeanOzalpasanResume.pdf';  // Clear the iframe source
+        resumeFrame.src = 'UPDATEDSeanOzalpasanResume.pdf';  // Clear the iframe source
     });
 
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && resumeOverlay.style.display === 'block') {
             resumeOverlay.style.display = 'none';
-            resumeFrame.src = 'SeanOzalpasanResume.pdf';
+            resumeFrame.src = 'UPDATEDSeanOzalpasanResume.pdf';
         }
     });
 
