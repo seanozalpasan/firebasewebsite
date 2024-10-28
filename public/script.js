@@ -218,8 +218,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 pdf: "Yurtta sulh Cihanda sulh.pdf"
             },
             3: {
-                title: "Project Title 3",
-                description: "Detailed description of project 3. Include relevant links, technologies used, and key features implemented.",
+                title: "Project Title 3 Coming Soon",
+                description: "Coming Soon",
                 image: "project3.jpg"
             },
             4: {
