@@ -201,7 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
         Over the summer I took a deep dive into Cyber Security. I did a 3 week 21 hr/wk program where
         I learned a lot of the important topics in CyberSec, and completed mini-projects with a group.
         After the program concluded, the interest stuck, and I asked one of the boot camp mentors to shadow me as I made this 
-        mock-Keylogger. They appreciated my work ethic and passion so much, that they offered me a job if I might need one in college 🙏 
+        mock-Keylogger. A Keylogger is a type of malware that people can accidentally install which tracks
+        things like keystrokes, mouse movements, and screen activity. My keylogger tracked all of these things, as well as having the functionality 
+        of taking a screenshot if the script detected keywords. After 10 screenshots, the Keylogger script would send me an email of all screenshots,
+        keyboard, and mouse data.
+        My mentor appreciated my work ethic and passion so much, that they offered me a job if I might need one in college 🙏 
         | Click on the image to get to the project GitHub link
         `;
 
