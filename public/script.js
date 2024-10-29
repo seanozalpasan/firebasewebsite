@@ -82,16 +82,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // About page photo carousel
     let currentPhotoIndex = 0;
     const photos = [
-        'goated.jpg',
-        'friends.jpg',
-        'wmom.JPG',
-        'scenic.jpg',
-        'seanpfp.jpg',
-        'eatingfood.JPEG',
-        'inthecar.JPG',
-        'porkbellyyum.jpg',
-        'academicex.jpg',
-        'suited.jpg'
+        'aboutphotos/goated.jpg',
+        'aboutphotos/friends.jpg',
+        'aboutphotos/wmom.JPG',
+        'aboutphotos/scenic.jpg',
+        'aboutphotos/seanpfp.jpg',
+        'aboutphotos/eatingfood.JPEG',
+        'aboutphotos/inthecar.JPG',
+        'aboutphotos/porkbellyyum.jpg',
+        'aboutphotos/academicex.jpg',
+        'aboutphotos/suited.jpg'
     ];
 
     function setupPhotoCarousel() {
@@ -142,16 +142,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentImageIndex = 0;
         
         const sailingPhotos = [
-            'sf1.jpg',
-            'sf2.jpg',
-            'sf3.jpg',
-            'mont1.jpg',
-            'hiking.jpg',
-            'iluvsailing.jpg',
-            'boat.JPG',
-            'newport.JPG',
-            'ogsailing.JPG',
-            'sandiegoboat.jpg'
+            'sailingphotos/sf1.jpg',
+            'sailingphotos/sf2.jpg',
+            'sailingphotos/sf3.jpg',
+            'sailingphotos/mont1.jpg',
+            'sailingphotos/hiking.jpg',
+            'sailingphotos/iluvsailing.jpg',
+            'sailingphotos/boat.JPG',
+            'sailingphotos/newport.JPG',
+            'sailingphotos/ogsailing.JPG',
+            'sailingphotos/sandiegoboat.jpg'
         ];
 
         sailingPhotos.forEach((photo, index) => {
