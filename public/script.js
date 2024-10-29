@@ -257,6 +257,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 description: proj5Desc,
                 image: "3dvis.png",
                 pdf: "https://github.com/seanozalpasan/PhysicsPotentialLab"
+            },
+            6: {
+                title: "More coming soon...",
+                description: "More coming soon!",
+                image: "",
+                pdf: "https://github.com/seanozalpasan/"
             }
         };
 
