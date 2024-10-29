@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'friends.jpg',
         'wmom.JPG',
         'scenic.jpg',
+        'seanpfp.jpg',
         'eatingfood.JPEG',
         'inthecar.JPG',
         'porkbellyyum.jpg',
