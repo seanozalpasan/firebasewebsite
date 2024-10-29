@@ -231,31 +231,31 @@ document.addEventListener('DOMContentLoaded', () => {
             1: {
                 title: "USC Summer High School Intensive in Next-Generation Engineering (SHINE)",
                 description: proj1Desc,
-                image: "7SHINE23-OZALPASAN-S-PosterFINAL - Sean Ozalpasan.jpg",
-                pdf: "7SHINE23-OZALPASAN-S-PosterFINAL - Sean Ozalpasan.pdf"
+                image: "projectstuff/7SHINE23-OZALPASAN-S-PosterFINAL - Sean Ozalpasan.jpg",
+                pdf: "projectstuff/7SHINE23-OZALPASAN-S-PosterFINAL - Sean Ozalpasan.pdf"
             },
             2: {
                 title: "Assembly of Turkish American Association's (ATAA) Yurtta Sulh Cihanda Sulh Presentation",
                 description: proj2Desc,
-                image: "yurttasulh.png",
-                pdf: "Yurtta sulh Cihanda sulh.pdf"
+                image: "projectstuff/yurttasulh.png",
+                pdf: "projectstuff/Yurtta sulh Cihanda sulh.pdf"
             },
             3: {
                 title: "Making a Keylogger malware to understand how evil Cybercriminals are",
                 description: proj3Desc,
-                image: "keylogbiggerimage.png",
+                image: "projectstuff/keylogbiggerimage.png",
                 pdf: "https://github.com/seanozalpasan/KeyLogProj"
             },
             4: {
                 title: "“Prosperous Future for All Through Multilateral Dialogue” in support of (April 24) International Day of Multilateralism and Diplomacy for Peace (A/RES/73/127)",
                 description: proj4Desc,
-                image: "24aprilpres.png",
-                pdf: "SeanOzalpasanATAANisan24Pres.pdf"
+                image: "projectstuff/24aprilpres.png",
+                pdf: "projectstuff/SeanOzalpasanATAANisan24Pres.pdf"
             },
             5: {
                 title: "3D & 2D Electric Potential Visualization",
                 description: proj5Desc,
-                image: "3dvis.png",
+                image: "projectstuff/3dvis.png",
                 pdf: "https://github.com/seanozalpasan/PhysicsPotentialLab"
             },
             6: {
