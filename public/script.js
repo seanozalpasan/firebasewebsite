@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'aboutphotos/porkbellyyum.jpg',
         'aboutphotos/academicex.jpg',
         'aboutphotos/suited.jpg',
+        'aboutphotos/dentist.jpg',
         'aboutphotos/robotics.jpg',
         'aboutphotos/galajacket.jpg',
         'aboutphotos/shinepres.jpg'
