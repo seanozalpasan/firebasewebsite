@@ -144,8 +144,31 @@ body {
 
 /* About Page Styles */
 .about-content {
-    padding: 100px 20%;
+    padding: 80px 20% 20px 20%; /* Adjusted padding to match projects section */
     text-align: center;
+    max-height: 100vh; /* Use full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: relative;
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+/* Add scrollbar styles for about content */
+.about-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.about-content::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 5px;
+}
+
+.about-content::-webkit-scrollbar-thumb {
+    background: #ff9955;
+    border-radius: 5px;
+}
+
+.about-content::-webkit-scrollbar-thumb:hover {
+    background: #ffbb88;
 }
 
 .bio {
