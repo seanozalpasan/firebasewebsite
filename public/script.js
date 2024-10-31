@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'aboutphotos/wmom.JPG',
         'aboutphotos/scenic.jpg',
         'aboutphotos/insta.jpg',
-        'aboutphotos/eatingfood.JPEG',
+        'aboutphotos/speaker.jpg',
         'aboutphotos/inthecar.JPG',
         'aboutphotos/porkbellyyum.jpg',
         'aboutphotos/academicex.jpg',
