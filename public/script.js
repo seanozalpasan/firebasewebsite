@@ -82,16 +82,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // About page photo carousel
     let currentPhotoIndex = 0;
     const photos = [
-        'aboutphotos/goated.jpg',
+        'aboutphotos/sanf.JPG',
         'aboutphotos/friends.jpg',
         'aboutphotos/wmom.JPG',
         'aboutphotos/scenic.jpg',
-        'aboutphotos/seanpfp.jpg',
+        'aboutphotos/insta.jpg',
         'aboutphotos/eatingfood.JPEG',
         'aboutphotos/inthecar.JPG',
         'aboutphotos/porkbellyyum.jpg',
         'aboutphotos/academicex.jpg',
-        'aboutphotos/suited.jpg'
+        'aboutphotos/suited.jpg',
+        'aboutphotos/robotics.jpg',
+        'aboutphotos/galajacket.jpg',
+        'aboutphotos/shinepres.jpg'
     ];
 
     function setupPhotoCarousel() {
