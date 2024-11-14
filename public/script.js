@@ -231,6 +231,14 @@ document.addEventListener('DOMContentLoaded', () => {
         were collected manually 😮‍💨 | Click on the image to get to the project GitHub link
         `;
 
+        const proj6Desc = `
+        The Village Institutes (1940-1954) were an innovative Turkish educational program that trained over 
+        17,000 teachers to combat rural illiteracy. Students learned practical skills alongside academics in self-sustaining institutes, 
+        creating a new generation of rural educators who transformed their communities through 
+        increased literacy and modern farming methods. This model offers valuable lessons 
+        for addressing modern educational challenges in developing regions.
+        `
+
         const projectData = {
             1: {
                 title: "USC Summer High School Intensive in Next-Generation Engineering (SHINE)",
@@ -263,6 +271,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 pdf: "https://github.com/seanozalpasan/PhysicsPotentialLab"
             },
             6: {
+                title: "Using the Village Institute System As A Case Study On Education",
+                description: proj6Desc,
+                image: "projectstuff/detailednov17pres.png",
+                pdf: "projectstuff/ATAANov2024Presentation.pdf"
+            },
+            7: {
                 title: "More coming soon...",
                 description: "More coming soon!",
                 image: "",
