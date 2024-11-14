@@ -233,10 +233,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const proj6Desc = `
         The Village Institutes (1940-1954) were an innovative Turkish educational program that trained over 
-        17,000 teachers to combat rural illiteracy. Students learned practical skills alongside academics in self-sustaining institutes, 
+        17,000 teachers to combat rural illiteracy. Students learned practical skills alongside academics 📚 in self-sustaining institutes, 
         creating a new generation of rural educators who transformed their communities through 
         increased literacy and modern farming methods. This model offers valuable lessons 
-        for addressing modern educational challenges in developing regions.
+        for addressing modern educational challenges in developing regions. | Click on the image to open the presentation!
+        `;
+
+        const proj7Desc = `
+        The Turkish Straits (Çanakkale and Istanbul) have been strategically vital waterways 
+        connecting the Black Sea to the Aegean. After centuries of Ottoman control, 
+        Turkey gained favorable governance through the 1936 Montreux Convention 📜, 
+        which has helped maintain regional stability by allowing Turkey to regulate maritime 
+        traffic and enforce neutrality during conflicts, from World War II to present-day events. | Click on the image to open the presentation!
         `
 
         const projectData = {
@@ -277,11 +285,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 pdf: "projectstuff/ATAANov2024Presentation.pdf"
             },
             7: {
+                title: "The Question of Diplomacy Of The Straits",
+                description: proj7Desc,
+                image: "projectstuff/turkeyVall.png",
+                pdf: "projectstuff/diplomacyofthestraits.pdf"
+            },
+            8: {
                 title: "More coming soon...",
                 description: "More coming soon!",
                 image: "",
                 pdf: "https://github.com/seanozalpasan/"
-            }
+            },
         };
 
         // Update the modal image to be clickable
