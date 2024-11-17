@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Navigating from and to page
     function navigateToPage(from, to) {
         const transitions = {
             'landing-about': {
@@ -406,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function setupKazakhstanCarousel() {
         let currentPhotoIndex = 0;
         const kazakhstanPhotos = [
-            
+            'kzphotos/kzp1.jpg'
         ];
         
         const carousel = document.querySelector('#kazakhstan-page .photo-carousel');
