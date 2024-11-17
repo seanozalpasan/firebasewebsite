@@ -206,7 +206,7 @@ body {
 }
 
 .social-links {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -230,6 +230,17 @@ body {
 
 .resume-btn::before {
     content: "📄";
+}
+
+.kz-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.kz-btn::before {
+    content: "🛫";
 }
 
 
