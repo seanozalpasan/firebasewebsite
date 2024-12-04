@@ -1,3 +1,4 @@
+//testing
 document.addEventListener('DOMContentLoaded', () => {
     const pages = {
         'landing': document.getElementById('landing-page'),
