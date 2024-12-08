@@ -211,10 +211,10 @@ body {
 }
 
 .social-links {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .social-links a {
