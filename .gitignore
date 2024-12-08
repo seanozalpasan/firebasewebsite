@@ -3,6 +3,8 @@ sailingphotos/
 projectstuff/
 kzstuff/
 
+**/*.json
+
 # Firebase
 .firebase/
 firebase-debug.log
