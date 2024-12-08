@@ -117,7 +117,28 @@ function setupSailingCarousel() {
 function setupKazakhstanCarousel() {
     let currentPhotoIndex = 0;
     const kazakhstanPhotos = [
-        'kzstuff/kzp1.jpg'
+        'kzstuff/kzp1.jpg',
+        'kzstuff/horse2.JPG',
+        'kzstuff/alfarabi.JPG',
+        'kzstuff/bazaar.JPG',
+        'kzstuff/bestgroup.JPG',
+        'kzstuff/birthday.JPG',
+        'kzstuff/camel.JPG',
+        'kzstuff/camii.JPG',
+        'kzstuff/cansen.JPG',
+        'kzstuff/googlemaps.PNG',
+        'kzstuff/grapes.JPG',
+        'kzstuff/groupPhoto.JPG',
+        'kzstuff/hawk.jpg',
+        'kzstuff/heykel.JPG',
+        'kzstuff/horse.JPG',
+        'kzstuff/madagascar.JPG',
+        'kzstuff/nature.JPG',
+        'kzstuff/shakshuka.JPG',
+        'kzstuff/snowgroup.JPG',
+        'kzstuff/turkistan.JPG',
+        'kzstuff/vekil.JPG',
+        'kzstuff/withtheguard.JPG'
     ];
     
     const carousel = document.querySelector('#kazakhstan-page .photo-carousel');
@@ -135,7 +156,6 @@ function setupKazakhstanCarousel() {
     kazakhstanPhotos.forEach(photo => {
         const img = document.createElement('img');
         img.src = photo;
-        img.loading = "lazy";
         carousel.appendChild(img);
     });
 

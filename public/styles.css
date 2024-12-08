@@ -183,11 +183,16 @@ body {
 }
 
 .photo-carousel {
-    margin: 2rem auto;  /* Changed from '2rem 0' to center horizontally */
+    margin: 2rem auto;
     height: 300px;
     position: relative;
     overflow: hidden;
-    width: 500px;    /* Added explicit width */
+    width: 500px;
+}
+
+#kazakhstan-page .photo-carousel {
+    height: 450px; 
+    width: 750px;
 }
 
 .photo-carousel img {
