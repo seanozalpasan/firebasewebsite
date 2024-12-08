@@ -1,3 +1,4 @@
+//THIS FILE IS UNUSED
 //going to add kz stuff
 document.addEventListener('DOMContentLoaded', () => {
     const pages = {
