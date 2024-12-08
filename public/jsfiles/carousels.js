@@ -27,6 +27,7 @@ function setupPhotoCarousel() {
     photos.forEach(photo => {
         const img = document.createElement('img');
         img.src = photo;
+        img.loading = "lazy";
         carousel.appendChild(img);
     });
 
@@ -62,6 +63,7 @@ function setupSailingCarousel() {
     sailingPhotos.forEach((photo, index) => {
         const img = document.createElement('img');
         img.src = photo;
+        img.loading = "lazy";
         img.addEventListener('click', () => {
             currentImageIndex = index;
             modalImg.src = photo;
@@ -133,6 +135,7 @@ function setupKazakhstanCarousel() {
     kazakhstanPhotos.forEach(photo => {
         const img = document.createElement('img');
         img.src = photo;
+        img.loading = "lazy";
         carousel.appendChild(img);
     });
 
