@@ -118,6 +118,7 @@ function setupKazakhstanCarousel() {
     let currentPhotoIndex = 0;
     const kazakhstanPhotos = [
         'kzstuff/kzp1.jpg',
+        'kzstuff/speech.jpg',
         'kzstuff/horse2.JPG',
         'kzstuff/alfarabi.JPG',
         'kzstuff/bazaar.JPG',
